@@ -17,7 +17,7 @@ def process_image(img_path):
 if __name__ == '__main__':
 
   # path to test image
-  test_img_path = "G:\\git-repos\\mobile-net-projects\\dataset\\test\\test_image_1.jpg"
+  test_img_path = "/Users/lily/Desktop/data/training-img/fertilizer/0.JPG"
 
   # process the test image
   pImg = process_image(test_img_path)
@@ -26,11 +26,11 @@ if __name__ == '__main__':
   mobilenet = mobilenet.MobileNet()
 
   # make predictions on test image using mobilenet
-  prediction = mobilenet.predict(pImg)
+ # prediction = mobilenet.predict(pImg)
 
   # obtain the top-5 predictions
-  results = imagenet_utils.decode_predictions(prediction)
-  print(results)
+ # results = imagenet_utils.decode_predictions(prediction)
+ # print(results)
 
   # convert the mobilenet model into tf.js model
   save_path = "output\\mobilenet"
