@@ -111,3 +111,5 @@ $("#predict-button").click(async function () {
     ul.appendChild(li);
   });
 });
+
+loadModel();
