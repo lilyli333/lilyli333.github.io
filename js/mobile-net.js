@@ -1,5 +1,5 @@
 let model;
-async function loadModel() {
+function loadModel() {
   console.log("model loading..");
 
   // display model loading progress box
