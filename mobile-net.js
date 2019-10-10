@@ -14,7 +14,7 @@ async function loadModel() {
   model = undefined;
   
   // load the model using a HTTPS request (where you have stored your model files)
-  model = await tf.loadLayersModel('https://gogul09.github.io/models/mobilenet/model.json');
+  model = await tf.loadLayersModel('https://https://github.com/lilyli333/lilyli333.github.io/blob/master/model.json");
   
   // hide model loading progress box
   loader.style.display = "none";
