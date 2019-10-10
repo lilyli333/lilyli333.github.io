@@ -112,4 +112,3 @@ $("#predict-button").click(async function () {
   });
 });
 
-loadModel();
