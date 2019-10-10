@@ -13,7 +13,7 @@ async function loadModel() {
   
   // clear the model variable
   //model = undefined;
-  const model = await tf.loadLayersModel('localstorage://model.json');
+  const model = await tf.loadLayersModel('https://lilyli333.github.io/model.json');
   // hide model loading progress box
   loader.style.display = "none";
   load_button.disabled = true;
