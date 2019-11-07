@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html>
-<script type="text/javascript" src="mobile-net.js"</script> 
+<html lang="en">
+<script 
+<script type="text/javascript" src="index.js"</script> 
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+<script type="text/javascript" src="/imagenet_classes.js"></script> 
+<script>
+  function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-<body>
-	<!-- used ot get image from disk -->
-	<input id="select-file-image" type="file">
-	<button id="load-button" class="input-button" onclick="loadModel()">Load Model</button>
+            reader.onload = function (e) {
+                $('#image')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
 
-	<div id="progress-box" style="display: block; width: 100% !important;">
-        <p style="color: white;">Loading mobilenet model..</p>
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Fertilizer Adulteration</title>
+</head>
+
+<body onload="loadModel()" id = "body">
+  <br>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+      <a class="navbar-brand" href="#">Fertilizer Adulteration</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="past_research.html">Past Research</a> -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container container-table">
+          <br><br>
+    <div class="row vertical-center-row">
+      <div class="text-center col-md-4">
+        <label for="select-file-image" class="input-button" id="upload-image-button">Upload Image </label>
+	      <input id="select-file-image" type="file" onchange="readURL(this);" style="display: none"/>
       </div>
 
-      <button id="predict-button" class="input-button predict-button" onclick="predict()">Predict</button>
+      <div class="text-center col-md-4">
+        <p>Predicting Image:</p>
+        <img id="image" src="0.JPG"width=100%/>
+      </div>
+
+      <div class="text-center col-md-4">
+  	    <!--<button id="load-button" class="input-button" onclick="loadModel()">Load Model</button> -->
+        <button class = "button" id="predict-button" class="input-button predict-button" onclick="predict()">Predict</button>
+        <br><br>
+        <p id="prediction"> </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </body>
 </html>
 
