@@ -1,0 +1,108 @@
+#logo-img{
+    padding: 10px;
+    width: 150px;
+    height: auto;
+}
+
+.navbar{
+    background-color: white;
+    width: fit-content;
+    opacity: 1;
+    z-index: 1001;
+    border-bottom-left-radius: 10px;
+    padding-right: 10px; 
+}
+
+.navbar-expanded{
+    background-color: lightcoral;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-not-expanded{
+    z-index: 1001;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw; 
+    height: fit-content;
+}
+
+.navbar-expanded .navbar{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    background-color: var(--lightblue) !important;
+}
+
+.navbar-expanded #nav{
+    height: 90vh;
+    width: 100%;
+}
+
+.navbar-expanded #navbar-item{
+    margin-left: 20vw;
+    width: 100%;
+    height: auto;
+}
+
+.navbar-primary{ 
+    z-index: 1001;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw; 
+    height: fit-content;
+}
+
+.navbar-secondary{ /* when page is scrolled down */
+    background-color: white;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    z-index: 1001;
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+}
+
+/* .navbar-dropdown :select{
+    background-color: black;
+} */
+
+#navbar-item{
+    color: var(--darkblue);
+    border-color: white;
+}
+
+#navbar-item:hover{ /* hovering over any navbar item */
+    color: var(--blue);
+}
+
+.dropdown {
+    border: white;
+}
+
+.dropdown:hover .dropdown-menu { /* hovering to open dropdown */
+    border: white;
+    background-color: white;
+    display: block;
+}
+.dropdown .dropdown-menu :hover { /*hovering over dropdown menu item */
+    background-color: white;
+    border: white;
+    color:var(--blue);
+}
+
+#responsive-navbar-nav{
+    /* background-color: black; */
+}
