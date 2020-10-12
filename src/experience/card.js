@@ -19,21 +19,29 @@ export default function ExpandingCard(props) {
 }
 
 function Card(props) {
-    let [hover,setHover]=React.useState(false);
+    const tags = []
+    for(var i in props.tags){
+        tags.push(
+            <div className="tag-button">
+                <h6>{props.tags[i]}</h6>
+            </div>
+        );
+    }
     return(
       <div>
         <motion.div
             whileHover={{
-                scale: [1, 1.1],
-                rotate: [0, 360],
+                scale: 1.05
             }}
-            transition={{duration: 0.3}}
-            className={hover ? "item-secondary" : "item-primary"}
-            onMouseOver={()=>setHover(true)} 
-            onMouseOut={()=>setHover(false)}
+            whileTap={{ scale: 0.995 }}
+            transition={{duration: 0.1}}
+            className="card-div"
         >
-            <h5 className="item-text" hidden={!hover}>{props.project}</h5>
-            <h3 className="item-text" hidden={hover}>{props.description}</h3>
+            <div style={{zIndex:"500"}}>
+            <h5>{props.project}</h5>
+            <p className="paragraph">{props.description}</p>
+            <div className="tags-div">{tags}</div>
+            </div>
         </motion.div>
       </div>
     );

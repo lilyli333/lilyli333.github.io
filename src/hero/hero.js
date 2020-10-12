@@ -6,7 +6,7 @@ import './animation.scss'
 import './stars.scss'
 
 export default class Hero extends React.Component {
-    gradientColors =  " #4484ce, #1ad7c0,#ff9b11, #9b59b6, #ff7f7f,#ecf0f1";
+    gradientColors =  " #ABDFE7,#7CB7D7, #95DDED, #ABDFE7,#7CB7D7, #95DDED";
 
     render(){
         return(

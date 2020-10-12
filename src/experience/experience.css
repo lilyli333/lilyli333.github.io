@@ -1,7 +1,10 @@
 @import '../theme.css';
 
 .experience-div{
-    height: 10vh;
+    height: fit-content;
     background-color: var(--blue);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw;
 }
