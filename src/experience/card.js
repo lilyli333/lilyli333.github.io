@@ -23,7 +23,7 @@ function Card(props) {
     for(var i in props.tags){
         tags.push(
             <div className="tag-button">
-                <h6>{props.tags[i]}</h6>
+                <h6 style={{width:"fit-content", flexGrow: "4"}}>{props.tags[i]}</h6>
             </div>
         );
     }
@@ -39,7 +39,7 @@ function Card(props) {
         >
             <div style={{zIndex:"500"}}>
             <h5>{props.project}</h5>
-            <p className="paragraph">{props.description}</p>
+            <p className="paragraph" style={{textAlign:"left", padding:"10px"}}>{props.description}</p>
             <div className="tags-div">{tags}</div>
             </div>
         </motion.div>

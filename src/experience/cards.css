@@ -37,17 +37,20 @@
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+
 .tag-button{
     border-color: var(--darkblue);
     border-radius: 4px;
     border: var(--darkblue);
     background-color: var(--lightblue);
     margin: 5px;
+    padding: 0px 5px;
 }
 
 .tags-div{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 426px){

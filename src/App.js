@@ -5,6 +5,7 @@ import Header from './header/navbar'
 import Hero from './hero/hero'
 import AboutMe from './about-me/about-me'
 import Experience from './experience/experience'
+import Research from './research/research'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <AboutMe/>
       <Experience/>
+      <Research/>
     </div>
   );
 }
