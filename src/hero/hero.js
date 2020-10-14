@@ -23,8 +23,8 @@ export default class Hero extends React.Component {
                 <Container className="text-center">
                 <header>Lily Li</header>
                 <Typist className="lead typist" cursor={{ show: false }}>
-                    <p>Computer Science student at the University of Illinois Urbana-Champaign </p>
-                    <p>passioante about human-computer interactions</p>
+                    <h2>Computer Science student at the University of Illinois Urbana-Champaign </h2>
+                    <h2>passioante about human-computer interactions</h2>
                 </Typist>
                 </Container>
             </Jumbotron>

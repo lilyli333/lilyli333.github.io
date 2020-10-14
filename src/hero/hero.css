@@ -14,16 +14,6 @@
   background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
 }
 
-.button:hover{
-  background-color: white !important;
-  border-color: white !important;
-  color: var(--blackcoral) !important;
-}
-.button{
-  background-color: var(--lightblue);
-  border-color: var(--lightblue);
-}
-
 /* #home{
   height: 100vh;
 } */
