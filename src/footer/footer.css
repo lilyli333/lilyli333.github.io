@@ -1,0 +1,8 @@
+@import '../theme.css';
+
+#footer-div{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}

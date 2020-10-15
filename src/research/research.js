@@ -15,7 +15,7 @@ export default class Research extends React.Component {
             );
         }
         return(
-            <div className="about-me-div">
+            <div id="research" className="info-div">
                 <div style={{zIndex:"50", width:"100vw", display:"flex", flexDirection:"column", justifyContent:"center", alignContent: "center", padding:"2vw"}}>
                     <h1>Research: Using ML to Detect Fertilizer Adulteration</h1>
                     <br/>
@@ -33,7 +33,6 @@ export default class Research extends React.Component {
                                 <img src={github_logo} id="logo-img"/>
                                 Clone Project
                         </Button>
-                        
                     </div>
                 </div>
             </div>

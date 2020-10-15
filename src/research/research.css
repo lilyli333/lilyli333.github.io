@@ -5,7 +5,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3vw;
+    padding: 7vw 3vw;
+}
+
+#research{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    z-index: 50;
+    padding: 5vw 10vw;
+    justify-content: space-between;
 }
 
 #logo-img{

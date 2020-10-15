@@ -1,6 +1,6 @@
 @import '../theme.css';
 
-.about-me-div{
+#about{
     background-color: white;
     display: flex;
     flex-direction: row;

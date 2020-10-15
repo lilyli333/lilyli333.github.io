@@ -6,7 +6,7 @@ import portrait from '../assets/portrait.JPG'
 export default class AboutMe extends React.Component {
     render(){
         return(
-            <div className="about-me-div">
+            <div id="about">
                 <img src={portrait} id="portrait-img"/>
                 <div style={{zIndex:"50", width:"50vw", display:"flex", flexDirection:"column", justifyContent:"space-around", padding:"2vw"}}>
                     <h1>About Me</h1>

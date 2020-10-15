@@ -1,6 +1,7 @@
 @import '../theme.css';
 
 
-#skills-div{
+#skills{
     background-color: #95dded;
+    z-index: 1;
 }

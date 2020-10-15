@@ -117,12 +117,11 @@ export default class Header extends React.Component {
                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
                       <Nav className="mr-auto" id="nav"> {/*actual navbar*/}
-                          <NavDropdown onClick={()=>this.open("/about")} href="/about" title="Who We Are" id="navbar-item" renderMenuOnMount={true} style={{...this.state.navbarClass=== "navbar-expanded" ? {visibility: "hidden"} : {visibility: "visible"}}}>
-                              <NavDropdown.Item  href="/culture" className="dropdown-item">Culture</NavDropdown.Item>
-                              <NavDropdown.Item href="/vision" className="dropdown-item">Vision</NavDropdown.Item>
-                              <NavDropdown.Item href="/brunswick" className="dropdown-item">Brunswick</NavDropdown.Item>
-                          </NavDropdown>
-                          {navLinks}
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#home"} id="navbar-item">Lily Li</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#about"} id="navbar-item">About Me</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#experience"} id="navbar-item">Experience</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#research"} id="navbar-item">Research</Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + "/#skills"} id="navbar-item">Skills</Nav.Link>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>

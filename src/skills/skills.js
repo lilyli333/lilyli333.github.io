@@ -19,7 +19,7 @@ export default class Skills extends React.Component {
         {primary:"Full-Stack Development", secondary:"used MERN stacks and Azure hosting", description:"0.5 year of experience"},
         {primary:"Python", secondary:"knows basic libraries like Numpy, Pandas, etc.", description:"4+ years of experience"}]
         return(
-            <div className="info-div" id="skills-div">
+            <div className="info-div" id="skills">
                     <h1 style={{color:"white"}}>Skills</h1>
                     <p className="paragraph">Below are the programming langages I've programmed in and the technolognies I've worked with.</p>
                     <TurningCardsText items ={cards}/>
