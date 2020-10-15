@@ -96,16 +96,16 @@ h6{
     font-size: 50px !important;
   }
   h5{
-    font-size: 30px !important;
-  }
-  h6{
     font-size: 20px !important;
   }
+  h6{
+    font-size: 16px !important;
+  }
   p{
-    font-size: 22px;
+    font-size: 16px;
   }
   .paragraph{
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
@@ -123,7 +123,7 @@ h6{
     font-size: 30px !important; 
   }
   h5{
-    font-size: 25px !important;
+    font-size: 15px !important;
   }
   h6{
     font-size: 15px !important;
@@ -150,16 +150,16 @@ h6{
     font-size: 25px !important;
   }
   h5{
-    font-size: 30px !important;
-  }
-  h6{
     font-size: 20px !important;
   }
+  h6{
+    font-size: 15px !important;
+  }
   p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .paragraph{
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -177,10 +177,10 @@ h6{
     font-size: 25px !important; 
    }
   h5{
-    font-size: 25px !important;
+    font-size: 15px !important;
   }
   h6{
-    font-size: 15px !important;
+    font-size: 8px !important;
   }
   p{
     font-size: 10px;
@@ -204,7 +204,7 @@ h6{
     font-size: 25px !important; 
   }
   h5 {
-    font-size: 14px !important;
+    font-size: 10px !important;
   }
   h6{
     font-size: 4px !important;

@@ -8,7 +8,7 @@ export default function TurningCardsText(props) {
     var items = []
     for(var i in props.items){
         items.push(
-          <Card primary={props.items[i].primary} secondary={props.items[i].secondary} img={props.items[i].img}/>
+          <Card primary={props.items[i].primary} secondary={props.items[i].secondary} description={props.items[i].description}/>
         );  
     }
     return(
@@ -29,17 +29,20 @@ function Card(props) {
         >
         </motion.div>
         <div id="item-div">
-            <div className={isOpen ? "item-expanded" : "item-closed"} id="item">
-                <h6 hidden={isOpen}>{props.primary}</h6>
-                <h1 hidden={!isOpen}>{props.primary}</h1>
-                <p hidden={!isOpen}>{props.secondary}</p>
-            </div>
-            <Button onClick={() => setIsOpen(!isOpen)} id="card-button" style={{height:"fit-content"}}>
-                <h1 hidden={isOpen}>+</h1>
-                <h1 hidden={!isOpen}>-</h1>
+            <div id="item-background">
+                <div className={isOpen ? "item-expanded" : "item-closed"} id="item">
+                    <h6 hidden={isOpen}>{props.primary}</h6>
+                    <h5 hidden={!isOpen}>{props.primary}</h5>
+                    <p hidden={!isOpen} className="paragraph">{props.secondary}</p>
+                </div>
+                <Button onClick={() => setIsOpen(!isOpen)} id="card-button" style={{height:"fit-content"}}>
+                    <h1 hidden={isOpen}>+</h1>
+                    <h1 hidden={!isOpen}>-</h1>
                 </Button>
-            
-            
+            </div>
+            <div hidden={isOpen}>
+                <h6>{props.description}</h6>
+            </div>
         </div>
     </div>
     );

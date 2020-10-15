@@ -9,16 +9,6 @@
     flex-wrap: wrap;
 }
 
-#card-img{
-    position: absolute;
-    height: 12vw;
-    width: 30vw;
-    object-fit: cover;
-    overflow: hidden;
-    z-index: 1;
-    padding: 1vw 20px;
-}
-
 .item-text{
     vertical-align: middle;
     width: fit-content;
@@ -32,7 +22,8 @@
     align-content: space-around;
     align-items: stretch;
     justify-items: center;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
     z-index: 50;
 }
 
@@ -42,28 +33,43 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    padding: 1vw 20px;
-
+    margin: 1vw 20px;
+    border-color: var(--darkblue);
+    background-color: var(--lightblue);
+    border-radius: 5px;
 }
 
 .item-expanded{
-    width: 30vw;
-    height: 10vw;
+    width: 25vw;
+    height: 8vw;
     border-color: var(--lightblue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
     background-color: white;
     border-color: white;
-
-    padding: 40px;
 }
 
 .item-closed{
     width: 15vw;
-    height: 10vw;
+    height: 8vw;
     vertical-align: middle;
-    border-color: var(--lightblue);
     border-width: 2px;
     background-color: white;
-    border-color: white;
+}
+
+#item-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.secondary-item-expanded{
+    width: 0;
 }
 
 #card-button{
