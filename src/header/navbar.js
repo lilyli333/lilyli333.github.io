@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import './navbar.css';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -75,41 +76,41 @@ export default class Header extends React.Component {
       }
     }
     render() {
-      var navLinks = []
-      if(window.innerWidth > 600){
-        navLinks.push(
-          <Nav.Link href="/about" id="navbar-item">What We Do</Nav.Link>
-        );
-        navLinks.push(
-        <Nav.Link href="/opportunities" id="navbar-item">Opportunities</Nav.Link>
-        );
-        navLinks.push(
-          <Nav.Link href="/contact" id="navbar-item">Contact</Nav.Link>
-        );
-      }
-      else{
-        navLinks.push(
-          <Nav.Link href="/about" id="navbar-item"><h5>Who We Are</h5></Nav.Link>
-        );
-        navLinks.push(
-        <NavDropdown.Item  href="/culture" id="navbar-item"><h5>Culture</h5></NavDropdown.Item>
-        );
-        navLinks.push(
-          <NavDropdown.Item href="/vision" id="navbar-item"><h5>Vision</h5></NavDropdown.Item>
-        );
-        navLinks.push(
-          <NavDropdown.Item href="/brunswick" id="navbar-item"><h5>Brunswick</h5></NavDropdown.Item>
-        );
-        navLinks.push(
-          <Nav.Link href="/what-we-do" id="navbar-item"><h5>What We Do</h5></Nav.Link>
-        );
-        navLinks.push(
-        <Nav.Link href="/opportunities" id="navbar-item"><h5>Opportunities</h5></Nav.Link>
-        );
-        navLinks.push(
-          <Nav.Link href="/contact" id="navbar-item"><h5>Contact</h5></Nav.Link>
-        );
-      }
+      // var navLinks = []
+      // if(window.innerWidth > 600){
+      //   navLinks.push(
+      //     <Nav.Link href="/about" id="navbar-item">What We Do</Nav.Link>
+      //   );
+      //   navLinks.push(
+      //   <Nav.Link href="/opportunities" id="navbar-item">Opportunities</Nav.Link>
+      //   );
+      //   navLinks.push(
+      //     <Nav.Link href="/contact" id="navbar-item">Contact</Nav.Link>
+      //   );
+      // }
+      // else{
+      //   navLinks.push(
+      //     <Nav.Link href="/about" id="navbar-item"><h5>Who We Are</h5></Nav.Link>
+      //   );
+      //   navLinks.push(
+      //   <NavDropdown.Item  href="/culture" id="navbar-item"><h5>Culture</h5></NavDropdown.Item>
+      //   );
+      //   navLinks.push(
+      //     <NavDropdown.Item href="/vision" id="navbar-item"><h5>Vision</h5></NavDropdown.Item>
+      //   );
+      //   navLinks.push(
+      //     <NavDropdown.Item href="/brunswick" id="navbar-item"><h5>Brunswick</h5></NavDropdown.Item>
+      //   );
+      //   navLinks.push(
+      //     <Nav.Link href="/what-we-do" id="navbar-item"><h5>What We Do</h5></Nav.Link>
+      //   );
+      //   navLinks.push(
+      //   <Nav.Link href="/opportunities" id="navbar-item"><h5>Opportunities</h5></Nav.Link>
+      //   );
+      //   navLinks.push(
+      //     <Nav.Link href="/contact" id="navbar-item"><h5>Contact</h5></Nav.Link>
+      //   );
+      // }
         return(
             <div className={this.state.navbarClass}>
               <Navbar.Brand><h2></h2></Navbar.Brand>
@@ -117,11 +118,11 @@ export default class Header extends React.Component {
                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav"> {/*navbar background*/}
                       <Nav className="mr-auto" id="nav"> {/*actual navbar*/}
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#home"} id="navbar-item">Lily Li</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#about"} id="navbar-item">About Me</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#experience"} id="navbar-item">Experience</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#research"} id="navbar-item">Research</Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + "/#skills"} id="navbar-item">Skills</Nav.Link>
+                        <NavLink to={process.env.PUBLIC_URL + "/#home"} id="navbar-item" smooth={true}>Lily Li</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + "/#about"} id="navbar-item" smooth={true}>About Me</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + "/#experience"} id="navbar-item" smooth={true}>Experience</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + "/#research"} id="navbar-item" smooth={true}>Research</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + "/#skills"} id="navbar-item" smooth={true}>Skills</NavLink>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -129,5 +130,12 @@ export default class Header extends React.Component {
         );  
     }
 }
+
+/*
+<NavLink
+  to="/some/path#with-hash-fragment"
+  activeClassName="selected"
+  // etc...
+>*/
 
 
