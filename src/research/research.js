@@ -16,24 +16,22 @@ export default class Research extends React.Component {
         }
         return(
             <div id="research" className="info-div">
-                <div style={{zIndex:"50", width:"100vw", display:"flex", flexDirection:"column", justifyContent:"center", alignContent: "center", padding:"2vw"}}>
-                    <h1>Research: Using ML to Detect Fertilizer Adulteration</h1>
-                    <br/>
-                    <p>The research is led by Professor Hope Michelson in the Department of Agricultural and Consumer Economics (ACE) at UIUC. Current use of fertilizer in Tanzania has decreased, leading to lower agricultural productivity. The innovation aims to assist farmers in developing countries by detecting adulterated fertilizers using machine learning image classifier algorithms embedded in mobile solutions. We are working in collaboration with local farmers and government regulatory agencies, directly impacting them through novel technologies.</p>
-                    <div className="tags-div">
-                        {tags}
-                    </div>
-                    <br/>
-                    <div style={{width: "100%", justifyContent:"space-around", display:"flex",justifySelf:"center", padding:"0vw 20vw"}}>
-                        <Button className="button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group")}>
-                                <img src={github_logo} id="logo-img"/>
-                                GitHub Repo
-                        </Button>
-                        <Button className="button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group/Fertillizer_Adulteration_Detection_app/archive/master.zip")}>
-                                <img src={github_logo} id="logo-img"/>
-                                Clone Project
-                        </Button>
-                    </div>
+                <h1>Research: Using ML to Detect Fertilizer Adulteration</h1>
+                <br/>
+                <p>The research is led by Professor Hope Michelson in the Department of Agricultural and Consumer Economics (ACE) at UIUC. Current use of fertilizer in Tanzania has decreased, leading to lower agricultural productivity. The innovation aims to assist farmers in developing countries by detecting adulterated fertilizers using machine learning image classifier algorithms embedded in mobile solutions. We are working in collaboration with local farmers and government regulatory agencies, directly impacting them through novel technologies.</p>
+                <div className="tags-div">
+                    {tags}
+                </div>
+                <br/>
+                <div style={{width: "100%", justifyContent:"space-around", display:"flex",justifySelf:"center", padding:"0vw 20vw"}}>
+                    <Button className="button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group")}>
+                            <img src={github_logo} id="logo-img"/>
+                            <p>GitHub Repo</p>
+                    </Button>
+                    <Button className="button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group/Fertillizer_Adulteration_Detection_app/archive/master.zip")}>
+                            <img src={github_logo} id="logo-img"/>
+                            <p>Clone Project</p>
+                    </Button>
                 </div>
             </div>
         );

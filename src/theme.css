@@ -25,6 +25,7 @@
   outline: 0 !important;
   outline-style: none;
   box-shadow: none !important;
+  margin: 5px;
 }
 
 :-moz-any-link:focus {
@@ -154,6 +155,21 @@ h6{
   }
 }
 
+@media(max-width: 1024px){
+  h5{
+    font-size: 13px !important;
+  }
+  h6{
+    font-size: 13px !important;
+  }
+  p{
+    font-size: 13px !important;
+  }
+  .paragraph{
+    font-size: 12px !important;
+  }
+}
+
 @media (max-width: 769px), (max-height: 630px){ /* tablet */
   header{
     font-size: 100px !important;
@@ -198,37 +214,37 @@ h6{
     font-size: 15px !important;
   }
   h6{
-    font-size: 8px !important;
+    font-size: 12px !important;
   }
   p{
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .paragraph{
-    font-size: 10px;
+    font-size: 10px !important;
   }
 }
 
-@media (max-height: 410px){ /* extremely small window */
+@media (max-width: 410px){ /* extremely small window */
   header{
-    font-size: 50px !important;
+    font-size: 30px !important;
   }
   h1{
-    font-size: 20px !important;
+    font-size: 17px !important;
   }
   h2 {
-    font-size: 10px !important;
+    font-size: 17px !important;
   }
   h3{
-    font-size: 25px !important; 
+    font-size: 15px !important; 
   }
   h5 {
-    font-size: 10px !important;
+    font-size: 13px !important;
   }
   h6{
-    font-size: 4px !important;
+    font-size: 10px !important;
   }
   .paragraph{
-    font-size: 6px;
+    font-size: 8px !important;
   }
 }
 

@@ -19,13 +19,33 @@ export default function TurningCardsText(props) {
 }
 
 function Card(props) {
-    const variants = {
-        open: { opacity: 1, width: "20vw" },
-        closed: { opacity: 1, width: "30vw" },
+    var variants = {};
+    if(window.innerWidth > 1000){
+        variants = {
+            open: { opacity: 1, width: "20vw"},
+            closed: { opacity: 1, width: "30vw" },
+        }
+    }
+    else if(window.innerWidth > 600){
+        variants = {
+            open: { opacity: 1, width: "50vw" },
+            closed: { opacity: 1, width: "80vw"},
+        }
+    }
+    else if (window.innerWidth > 425){
+        variants = {
+            open: { opacity: 1, width: "10vw"},
+            closed: { opacity: 1, width: "30vw"  },
+        }
+    }
+    else{
+        variants = {
+            open: { opacity: 1, width: "50vw" },
+            closed: { opacity: 1, width: "80vw" },
+        }
     }
     let [isOpen,setIsOpen]=React.useState(false);
     return(
-      <div>
         <div id="item-div">
             <motion.div
             animate={isOpen ? "closed" : "open"}
@@ -48,6 +68,5 @@ function Card(props) {
                 <h6>{props.description}</h6>
             </div>
         </div>
-    </div>
     );
 }

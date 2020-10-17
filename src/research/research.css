@@ -9,9 +9,8 @@
 }
 
 #research{
-    background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     z-index: 50;
     padding: 5vw 10vw;
     justify-content: space-between;

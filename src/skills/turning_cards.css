@@ -1,12 +1,49 @@
 @import '../theme.css';
 
+
+@media (min-width: 770px){
+    #item-div{
+        width: 30vw;
+    }
+    .item-closed{
+        width: 15vw;
+        height: 8vw;
+    }
+    .item-expanded{
+        width: 40vw;
+        height: 8vw;
+    }
+}
+@media (max-width: 769px){
+    #item-div{
+        width: 80vw;
+    }
+    .item-closed{
+        width: 60vw !important;
+        height: 20vw;
+    }
+    .item-expanded{
+        width: 90vw !important;
+        height: 20vw;
+    }
+}
+
+#item-div{
+    position: relative;
+    margin: 1vw 20px;
+    border-color: var(--darkblue);
+    background-color: var(--lightblue);
+    border-radius: 5px;
+}
+
 .skills-card-div{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90vw;
-    display: flex;
+    align-self: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .item-text{
@@ -16,53 +53,33 @@
 }
 
 #item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-    align-items: stretch;
-    justify-items: center;
     border-radius: 5px;
     z-index: 50;
-    margin: 0;
-}
-
-#item-div{
-    width: 30vw;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center; */
-    position: relative;
-    margin: 1vw 20px;
-    border-color: var(--darkblue);
-    background-color: var(--lightblue);
-    border-radius: 5px;
-
+    padding: 10px;
 }
 
 .item-expanded{
-    width: 25vw;
-    height: 8vw;
     border-color: var(--lightblue);
     padding: 20px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: center;
+    align-content: space-around; */
     background-color: white;
     border-color: white;
 }
 
 .item-closed{
-    width: 15vw;
-    height: 8vw;
     vertical-align: middle;
     border-width: 2px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #item-background{
+    justify-self: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: center;
