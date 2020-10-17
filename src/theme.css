@@ -37,24 +37,20 @@
 
 .button.focus, .button:focus {
   background-color: var(--blue) !important;
-  border-color: white !important;
+  /* border-color: white !important; */
   color: var(--blackcoral) !important;
-  outline: 0 !important;
-  -moz-outline-style: none; 
 }
 
 .button:active {
   background-color: var(--blue) !important;
-  border-color: white !important;
+  /* border-color: white !important; */
   color: var(--blackcoral) !important;
-  outline: 0 !important;
-  outline:none !important;
-  border: none !important;
 }
 
 *:focus {
   outline: 0 !important;
-  border: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
 }
 
 body{
