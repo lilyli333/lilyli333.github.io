@@ -19,10 +19,16 @@
     align-self: center;
 }
 
+@media (min-width: 770px){
+    .card-div{
+        width: 40vw;
+    }
+}
+
 .card-div{
     background-color: white;
     height:fit-content;
-    width: 40vw;
+    
     display: flex;
     padding: 20px;
     flex-direction: column;

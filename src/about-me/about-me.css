@@ -15,3 +15,7 @@
     border-radius: 10vw;
     z-index: 50;
 }
+#resume-button{
+    border-radius: 5px;
+    align-self: center;
+}

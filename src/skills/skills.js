@@ -3,9 +3,6 @@ import {Jumbotron, Container, Button} from 'react-bootstrap'
 import github_logo from '../assets/github_logo.png'
 import TurningCardsText from './turning_cards'
 import './skills.css'
-import android from '../assets/android.png'
-import c from '../assets/c.png'
-import apple from '../assets/apple.jpg'
 export default class Skills extends React.Component {
     render(){
         //, , , ,  (TensorFlow, Keras, MobileNet), NodeJS, python, React, Swift

@@ -2,6 +2,7 @@ import React from 'react';
 import {Jumbotron, Container, Button} from 'react-bootstrap'
 import './about-me.css'
 import portrait from '../assets/portrait.JPG'
+import resume from '../assets/resume.pdf'
 
 export default class AboutMe extends React.Component {
     render(){
@@ -16,6 +17,7 @@ export default class AboutMe extends React.Component {
                         I am currently interning at Brunswick Corporation, working on a myriad of different projects, spanning from full-stack development to robotics.
                         In my free time, I love jamming on the guitar or piano with my friends!  
                     </p>
+                    <Button className="button" id="resume-button" href={resume} target='_blank'>RESUME</Button>
                 </div>
             </div>
         );

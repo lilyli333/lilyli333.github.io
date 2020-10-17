@@ -23,14 +23,14 @@ export default class Research extends React.Component {
                     {tags}
                 </div>
                 <br/>
-                <div style={{width: "100%", justifyContent:"space-around", display:"flex",justifySelf:"center", padding:"0vw 20vw"}}>
-                    <Button className="button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group")}>
+                <div style={{width: "100%", justifyContent:"space-around", display:"flex", flexDirection:"row",justifySelf:"center", padding:"0vw 20vw"}}>
+                    <Button className="button" id="research-button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group")}>
                             <img src={github_logo} id="logo-img"/>
-                            <p>GitHub Repo</p>
+                            GitHub Repo
                     </Button>
-                    <Button className="button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group/Fertillizer_Adulteration_Detection_app/archive/master.zip")}>
+                    <Button className="button" id="research-button" onClick={() => window.open("https://github.com/ACES-UIUC-Fertilizer-Group/Fertillizer_Adulteration_Detection_app/archive/master.zip")}>
                             <img src={github_logo} id="logo-img"/>
-                            <p>Clone Project</p>
+                            Clone Project
                     </Button>
                 </div>
             </div>
