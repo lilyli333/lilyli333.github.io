@@ -10,9 +10,9 @@
 }
 
 #portrait-img{
-    height: 20vw;
+    height: 26vw;
     width: auto;
-    border-radius: 10vw;
+    border-radius: 13vw;
     z-index: 50;
 }
 #resume-button{

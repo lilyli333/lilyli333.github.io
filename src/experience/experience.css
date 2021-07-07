@@ -1,13 +1,5 @@
 @import '../theme.css';
 
-.info-div{
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3vw;
-}
-
 #experience{
     background-color: var(--blue);
 }

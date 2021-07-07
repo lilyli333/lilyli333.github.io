@@ -22,7 +22,7 @@ function Card(props) {
     const tags = []
     for(var i in props.tags){
         tags.push(
-            <div className="tag-button">
+            <div className="tag-text">
                 <h6 style={{width:"fit-content", flexGrow: "4"}}>{props.tags[i]}</h6>
             </div>
         );

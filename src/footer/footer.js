@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
             <div className="info-div" id="footer-div">
                 <a href="https://www.linkedin.com/in/jiayu-lily-li/"><img src={linkedin} style={{width:"30px", height:"30px", margin:"10px"}}/></a>
                 <a href="https://www.github.com/lilyli333"><img src={github} style={{width:"30px", height:"30px", margin:"10px"}}/></a>
-                <a href={"mailto:" + "lily.jiayu@gmail.com"}><img src={mail} style={{width:"30px", height:"30px", margin:"10px"}}/></a>
+                <a href={"mailto:" + "lily.jiayu@gmail.com"}><img src={mail} style={{width:"35px", height:"30px", margin:"10px"}}/></a>
             </div>
         );
     }
