@@ -18,7 +18,7 @@ export default class AboutMe extends React.Component {
                         On campus, I am a small group leader in the Navigators (a Christian fellowship), and a mentor in the Bits and Bytes program hosted by Women in Computer Science (WCS).
                     </p>
                     <p> 
-                        In my free time, I love watching sitcoms, embroidering, and hiking. I am devoted to taste testing every possible of Kombucha and visiting all 63 US national parks.
+                        In my free time, I love watching sitcoms, embroidering, and hiking. I am devoted to tasting every possible Kombucha flavor and visiting all 63 US national parks.
                     </p>
                     <Button className="button" id="resume-button" href={resume} target='_blank'>RESUME</Button>
                 </div>
