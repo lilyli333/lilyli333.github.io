@@ -15,10 +15,10 @@ export default class AboutMe extends React.Component {
                     <p> Hello there! My name is Lily Li. </p>
                     <p> 
                         I am an undergraduate student studying Computer Science with a minor in Business at the University of Illinois Urbana-Champaign.
-                        On campus, I am a small group leader in the Navigators (a Christian fellowship), and a mentor in the Bits and Bytes program hosted by Women in Computer Science (WCS).
+                        On campus, I am involved with the Navigators (a Christian fellowship), and am a mentor in the Bits n' Bytes mentorship program hosted by Women in Computer Science (WCS).
                     </p>
                     <p> 
-                        In my free time, I love watching sitcoms, embroidering, and hiking. I am devoted to tasting every possible Kombucha flavor and visiting all 63 US national parks.
+                        In my free time, I love watching sitcoms, embroidering, and hiking. I am dedicated to tasting every possible Kombucha flavor and visiting all 63 US national parks.
                     </p>
                     <Button className="button" id="resume-button" href={resume} target='_blank'>RESUME</Button>
                 </div>
