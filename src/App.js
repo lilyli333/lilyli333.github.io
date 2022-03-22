@@ -8,6 +8,7 @@ import Experience from './experience/experience'
 import Research from './research/research'
 import Skills from './skills/skills'
 import Footer from './footer/footer'
+import CS464 from './cs464/cs464';
 import { BrowserRouter, Route } from "react-router-dom";
 
 const Home = () => {
@@ -19,7 +20,6 @@ const Home = () => {
       <Experience/>
       <Research/>
       <Skills/>
-      <Footer/>
     </Fragment>
   );
 };
@@ -29,19 +29,10 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
     <Header />
     <Route path="/" exact component={Home} />
+    <Route path="/cs464" exact component={CS464} />
+    <Footer/>
   </BrowserRouter>
   );
-  // return (
-  //   <div>
-  //     <Header/>
-  //     <Hero/>
-  //     <AboutMe/>
-  //     <Experience/>
-  //     <Research/>
-  //     <Skills/>
-  //     <Footer/>
-  //   </div>
-  // );
 }
 
 export default App;

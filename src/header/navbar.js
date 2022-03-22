@@ -123,6 +123,7 @@ export default class Header extends React.Component {
                         <NavLink to={process.env.PUBLIC_URL + "/#experience"} id="navbar-item" smooth={true}>Experience</NavLink>
                         <NavLink to={process.env.PUBLIC_URL + "/#research"} id="navbar-item" smooth={true}>Research</NavLink>
                         <NavLink to={process.env.PUBLIC_URL + "/#skills"} id="navbar-item" smooth={true}>Skills</NavLink>
+                        <NavLink to={process.env.PUBLIC_URL + "/cs464"} id="navbar-item" smooth={true}>Coursework</NavLink>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>

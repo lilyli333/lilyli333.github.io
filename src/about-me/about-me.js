@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron, Container, Button} from 'react-bootstrap'
 import './about-me.css'
-import portrait from '../assets/portrait.jpg'
+import portrait from '../assets/portrait.JPG'
 import resume from '../assets/resume.pdf'
 
 export default class AboutMe extends React.Component {

@@ -1,0 +1,29 @@
+.collapsible-div {
+    width: 100%;
+    background-color: var(--darkblue);
+    color: white !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.collapsible-header {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--darkblue);
+}
+
+.collapsible-div h5 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.collapsible-details {
+    width: 100%;
+    padding: 0 20px 20px 40px;
+    color: white;
+}

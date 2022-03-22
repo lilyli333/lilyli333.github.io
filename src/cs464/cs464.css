@@ -1,0 +1,28 @@
+#cs464 {
+    width: 100vw;
+    height: fit-content;
+    min-height: 85vh;
+    padding: 20vh 10vw;
+
+    background-color: var(--blue);
+    color: var(--blackcoral);
+}
+
+.assignments-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#assignment-img {
+    width: 40%;
+    align-self: center !important;
+}
+
+.assignment-description {
+    padding: 30px;
+    background: var(--lightblue);
+    color: var(--blackcoral);
+}

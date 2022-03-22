@@ -2,8 +2,6 @@ import React from 'react';
 import {Jumbotron, Container, Button} from 'react-bootstrap'
 import Typist from "react-typist";
 import './hero.css'
-import './animation.scss'
-import './stars.scss'
 
 export default class Hero extends React.Component {
     gradientColors =  " #ABDFE7,#7CB7D7, #95DDED, #ABDFE7,#7CB7D7, #95DDED";
