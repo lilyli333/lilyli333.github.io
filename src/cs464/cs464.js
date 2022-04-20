@@ -109,14 +109,18 @@ export default class CS464 extends React.Component {
                 <Collapsible 
                     header={"Assignment 4: Personal Action Plan Against a Dystopic Future"}
                     detail={<div>
+                        <p className='assignment-description'><b>Description: </b>In order to be mindful of the impacts of tech, below is a personal action plan.</p>
                         <p><b>Ways of noticing dystopian possibilities</b></p>
                             <p>1. I will keep up to date with major developments in the field of tech: including new breakthrough technologies, legislative policies that impact tech, etc.</p>
                             <p>2. I will remember to educate myself on all of the different sides of a specific issue before making my own conclusion</p>
+                        <br/>
                         <p><b>Applications to personal life</b></p>
                             <p>1. I will educate friends and family who are not in tech of the potential benefits and harms of tech</p>
+                        <br/>
                         <p><b>Applications to work/professional life</b></p>
                             <p>1. I will not be bound to the golden handcuffs of working for a large tech company. Instead, I will be vigilant against predatory practices both within and outside of the company and be cautious of any environmental and societal impacts made by the tech</p>
                             <p>2. I will openly share my salaries and wages in order to promote transparency in hiring practices and compensation</p>
+                        <br/>
                         <p><b>Applications to broader societal impacts</b></p>
                             <p>1. I will take note of any technologies that increase the rate of climate change and make pointed efforts to confront such behavior</p>
                             <p>2. I will continue to make green choices in order to support environmental efforts</p>
